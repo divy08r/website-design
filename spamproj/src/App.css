@@ -1,0 +1,48 @@
+*{
+  font-family:'Roboto' 'sans-serif';
+}
+.navbar{
+  font-size:18px;
+  font-weight: 400;
+}
+.logo{
+  height:40px;
+  width:40px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin:15px;
+}
+
+
+.rbutton:hover{
+  box-shadow:green outset;
+}
+.Registerbutton,.Loginbutton,.Readbutton{
+  margin-top:auto;
+  margin-right:17px;
+  height: 40px;
+  width: 80px;
+  /* background-color:rgba(0, 0, 0, 0.738); */
+  /* border: 3px solid #15f4ee; */
+  background-color: white;
+  color:green;
+  border-radius:17%;
+  border : 3px solid white;
+  font-weight: 600;
+  /* border-color: white; */
+  letter-spacing: 2px;
+  /* transition: 1.2s ease-in-out; */
+}
+/* 
+.Registerbutton:hover, .Loginbutton:hover{
+  box-shadow: 0px 1.2px 10px #15f4ee inset,
+  0px 1.2px 10px #15f4ee inset,
+  0px 1.2px 10px #15f4ee inset,
+  0px 1.2px 10px #15f4ee inset; 
+  cursor: pointer;
+} */
+
+/* 
+.row{
+display: flex;
+} */
