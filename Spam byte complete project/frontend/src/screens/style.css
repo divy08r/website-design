@@ -1,0 +1,12 @@
+@media screen and (max-width:900px)
+{
+    .add{
+        margin-bottom: 16rem;
+    }
+}
+@media screen and (max-width:2400px)
+{
+    .add{
+        margin-bottom: 14rem;
+    }
+}
