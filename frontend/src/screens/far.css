@@ -1,0 +1,251 @@
+
+.container2{
+    display:flex;
+}
+
+.name{
+    font-size: 20px;
+}
+.card9{
+    margin:10px;
+    border: 2px solid green;
+}
+.card1:hover{
+    box-shadow: 0 8px 8px 0 green, 0 6px 20px 0 rgba(52, 215, 40, 0.19);
+}
+
+.card9:hover{
+    box-shadow: 0 8px 8px 0 green, 0 6px 20px 0 rgba(7, 7, 7, 0.19);
+}
+
+.card1{
+    margin:30px;
+    border: 2px solid green;
+}
+
+.card-img-top1{
+    height:12rem;
+}
+.imgg{
+    display:flex;
+    margin-left:10px;
+    margin-top:50px;
+}
+.img{
+    border:2px solid black;
+    border-radius:100%;
+    object-fit: cover;
+}
+
+.img:hover{
+        box-shadow: 2px 2px 1px black;
+}
+.loc,.phone,.Email{
+    text-align: center;
+    font-size:22px;
+    word-spacing: 4px;
+    border:1px solid black;
+    border-radius: 10px;
+    padding:5px;
+    padding-right:15px;
+    padding-left:20px;
+    margin:2px;
+}
+
+.loc:hover,.phone:hover,.Email:hover{
+    color:white;
+    background-color:black;
+
+}
+.abouthead{
+    font-size: 30px;
+    font-weight: 600;
+}
+.line2{
+    margin-top:60px;
+    border:2px solid rgba(15, 14, 14, 0.988);
+}
+.btnn{
+    margin-left:50px;
+    background-color:blue;
+}
+.about{
+    display:flex;
+    flex-direction:row;
+}
+.texth1,.texth2{
+    margin:20px;
+}
+.textp{
+    margin:10px;
+}
+.portal{
+    visibility: hidden;
+    margin:30px;
+    width:300px;
+}
+
+.portal2{
+    width:300px;
+    margin: auto;
+    margin-top:0.8rem;
+}
+
+.headerclass{
+    display: flex;
+}
+.con{
+    margin-top: 8rem;
+    width:40vw;
+    line-height: 40px;
+}
+.farmer-section {
+    margin-top: 30px;
+  }
+  
+  .texth2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:30px;
+  }
+
+  .line1{
+    font-size:15px;
+  }
+  
+  .section-item {
+    width: 200px;
+    background-color:rgba(0, 0, 0, 0.825);
+    padding: 20px;
+    color:white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .section-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-item p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
+/* footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+   }
+
+   .footer ul li a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+   } 
+
+   .footer ul li{
+     display:inline-block;
+     padding: 0 15px;
+     text-align: center;
+   } 
+ 
+   .list:hover{
+    color: #bf0c6b;
+   } 
+    .footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color:#010211;
+   }
+   .list3
+   {
+    display:flex;
+    list-style-type:none;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+   }
+   .list3 li
+   {
+    margin-left:2%;
+} a{
+    text-decoration:none;
+}
+ul li a:hover{
+    color:#0d1244;
+ }  
+ .footer{
+    padding: 40px 0;
+    background: #61589d;
+   }
+   .footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+     color: aquamarine; 
+   }
+    .footer .social :hover{
+    color: #bf0c6b;
+    }
+   .footer .social a{
+     font-size:24px;
+     color: white;
+     border: 1px solid #ccc;
+     width: 40px;
+     height: 40px;
+     line-height: 38px;
+     display: inline-block;
+     text-align: center;
+     border-radius: 50%;
+     margin: 0 8px;
+     opacity: 0.75;
+   } 
+
+   .footer .social a :hover{
+    opacity: 0.9;
+   }  */
+
+
+@media only screen and (max-width:507px){
+    .portal{
+        width:150px;
+    }
+} 
+@media only screen and (max-width:850px){
+    .con{
+        position:static;
+        margin-left:12px;
+    }
+} 
+@media only screen and (max-width:465px){
+      .list3{
+        font-size:8px;
+    }  
+    .card9{
+        width:18rem;
+    }
+} 
+
+@media only screen and (max-width:800px){
+    .card2{
+       height:200px;
+    }
+    .container2{
+        flex-direction:column;
+    }
+    .about{
+        flex-direction:column;
+    }
+} 
