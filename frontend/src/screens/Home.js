@@ -41,13 +41,13 @@ export default function Home() {
                 foodcat.map((data) => {
                   return (<div className='row sub'>
                     <div key={data._id} className="fs-2 m-3">
-                      {data.CategoryName}
+                      {data.name}
                     </div>
                     {
-                      fooditem.filter((item) => item.CategoryName === data.CategoryName).map(filteritems => {
+                      fooditem.filter((item) => item.categoryname === data.name).map(filteritems => {
                         return (
                           <div key = {filteritems._id} className='col-12 col-md-6 add col-lg-3'>
-                            <Cards img={filteritems.img} title={filteritems.ProductName} quantity={filteritems.Quantity} price={filteritems.Price} />
+                            <Cards img={filteritems.img} title={filteritems.name}  price={filteritems.price} />
                           </div>
                         )
                       })
@@ -65,7 +65,7 @@ export default function Home() {
                   farmer.map((farmerdata) => {
                     return (
                       <div key = {farmerdata._id} className='col-12 col-md-6 add col-lg-3'>
-                        <FarmerCard title={farmerdata.Name} img={farmerdata.img} Location={farmerdata.Location} sold={farmerdata.products[0].ProductName} />
+                        <FarmerCard title={farmerdata.name} img={farmerdata.img} Location={farmerdata.location} sold={farmerdata.topproduct1} />
                       </div>
                     )
                   })
