@@ -23,7 +23,7 @@ export default function Farmerpagecontent(props) {
                 <div className="con">
                     <div className="loc"><strong>{props.location}</strong></div>
                     <div className="phone"><strong>{props.phone}</strong></div>
-                    <div className="Email"><strong>{props.Email}</strong></div>
+                    <div className="Email"><strong>{props.email}</strong></div>
                 </div>
             </header>
             <hr className="line2" />
@@ -54,8 +54,8 @@ export default function Farmerpagecontent(props) {
                         <p className='textp'>{props.IncometoDate}</p>
                     </div>
                     <div className="section-item">
-                        <h3>Average Monthly Income</h3>
-                        <p className='textp'>{props.averagemonthlyincome}</p>
+                        <h3>Last Month Income</h3>
+                        <p className='textp'>{props.lastmonthincome}</p>
                     </div>
                     <div className="section-item">
                         <h3>Expenses</h3>
@@ -71,16 +71,16 @@ export default function Farmerpagecontent(props) {
             <h1 className='texth1'>Top Products</h1>
             <div className="container2">
                 <div className="card9" style={{ "width": "22rem", "height": "12rem" }}>
-                    <img src={props.product1} className="card-img-top1 card-img-top" alt="..." />
+                    <img src={props.topproduct1img} className="card-img-top1 card-img-top" alt="..." />
                 </div>
                 <div className="card9" style={{ "width": "22rem", "height": "12rem" }}>
-                    <img src={props.product2} className="card-img-top1 card-img-top" alt="..." />
+                    <img src={props.topproduct2img} className="card-img-top1 card-img-top" alt="..." />
                 </div>
                 <div className="card9" style={{ "width": "22rem", "height": "12rem" }}>
-                    <img style={{ 'height': "11rem" }} src="https://cdn.shopify.com/s/files/1/0562/4205/products/BentleySeed-CucumberPoinsett_Bulk_grande.jpg?v=1658428831" className="card-img-top1 card-img-top" alt="..." />
+                    <img style={{ 'height': "11rem" }} src={props.topproduct3img} alt="..." />
                 </div>
                 <div className="card9" style={{ "width": "22rem", "height": "12rem" }}>
-                    <img style={{ 'height': "11rem" }} src="https://cdn.shopify.com/s/files/1/2174/6775/products/20-pomegranate-fruit-tree-seeds-2_1024x1024.jpg?v=1666765017" className="card-img-top1 card-img-top" alt="..." />
+                    <img style={{ 'height': "11rem" }} src={props.topproduct4img} className="card-img-top1 card-img-top" alt="..." />
 
                 </div>
                 {/* <div className="card" style={{ "width": "22rem", "height": "12rem" }}>
