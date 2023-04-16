@@ -10,6 +10,10 @@ app.use(express.json());
 app.use("/api",require("./routes/Createuser"));
 app.use("/api",require("./routes/Loginuser"));
 app.use("/api",require("./routes/Displaydata"));
+app.use("/api",require("./routes/Foodcategory"));
+app.use("/api",require("./routes/Fooditem"));
+app.use("/api",require("./routes/Farmerdetails"));
+
 
 app.get("/",function(req,res)
 {
