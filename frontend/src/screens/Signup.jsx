@@ -66,7 +66,7 @@ export default function Signup() {
                                                 <div className="form-check form-check-inline mb-0 me-4">
                                                     <input className="form-check-input" type="radio" name="usertype" id="Coustomer" 
                                                         value="Coustomer" onClick={handleselect}/>
-                                                    <label className="form-check-label" htmlFor="coustomer">Coustomer
+                                                    <label className="form-check-label" htmlFor="coustomer">Customer
 
                                                     </label>
                                                 </div>

@@ -42,3 +42,4 @@ topproduct2img,topproduct3img,topproduct4img} = req.body.Credentials;
     await Farmerdetails.insertMany([data]);
 })
 module.exports = router;
+module.exports = router;

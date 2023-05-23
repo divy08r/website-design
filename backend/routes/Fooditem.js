@@ -18,3 +18,4 @@ router.post("/fooditem", async (req, res) => {
     await Fooditem.insertMany([data]);
 })
 module.exports = router;
+module.exports = router;

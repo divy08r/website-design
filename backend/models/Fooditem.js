@@ -20,3 +20,4 @@ const FooditemSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model("fooditem",FooditemSchema);
+module.exports = mongoose.model("fooditem",FooditemSchema);

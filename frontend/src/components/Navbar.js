@@ -81,7 +81,7 @@ export default function Navbar() {
           <div className="space-y-1 px-2 pt-2 pb-3">
             <Link to="/" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</Link>
 
-            <Link to="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Editorial</Link>           
+            <Link to="https://divy08r.github.io/greendel/" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Editorial</Link>           
             <Link to="/contactus" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact Us</Link>
           </div>
         </div>

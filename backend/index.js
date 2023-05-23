@@ -13,9 +13,6 @@ app.use("/api",require("./routes/Displaydata"));
 app.use("/api",require("./routes/Foodcategory"));
 app.use("/api",require("./routes/Fooditem"));
 app.use("/api",require("./routes/Farmerdetails"));
-app.use('/api',require('./routes/AddToCart'))
-app.use('/api',require('./routes/DisplayCart'))
-app.use('/api',require('./routes/DeleteFromCart'))
 
 
 app.get("/",function(req,res)
