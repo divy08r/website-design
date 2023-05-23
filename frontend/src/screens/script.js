@@ -1,3 +1,4 @@
+
 var btn = document.querySelector(".ok");
 
 var answers = ["#WhyGD", "#Seller", "#facilities", "#techSup", "WhyBuyfromus.html"];

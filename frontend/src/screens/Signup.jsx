@@ -28,9 +28,6 @@ export default function Signup() {
             console.log(err)
         }
     }
-
-
-
     return (
 
         <>
@@ -48,25 +45,25 @@ export default function Signup() {
                                         <form action="POST">
 
                                             <div className="form-outline mb-2">
-                                                <input type="text" name="name" id="form3Example1cg" className="form-control form-control-lg" autoComplete='off' value={Credentials.name} onChange={update} />
                                                 <label className="form-label" htmlFor="form3Example1cg">Your Name</label>
+                                                <input type="text" name="name" id="form3Example1cg" className="form-control form-control-lg" autoComplete='off' value={Credentials.name} onChange={update} />
                                             </div>
 
                                             <div className="form-outline mb-2">
-                                                <input type="email" name="email" id="form3Example3cg" className="form-control form-control-lg" autoComplete='off' value={Credentials.email}   onChange={update} />
                                                 <label className="form-label" htmlFor="form3Example3cg">Your Email</label>
+                                                <input type="email" name="email" id="form3Example3cg" className="form-control form-control-lg" autoComplete='off' value={Credentials.email}   onChange={update} />
                                             </div>
 
                                             <div className="form-outline mb-2">
-                                                <input type="password" id="form3Example4cg" className="form-control form-control-lg" autoComplete='off' name="password" value={Credentials.password} onChange={update} />
                                                 <label className="form-label" htmlFor="form3Example4cg">Password</label>
+                                                <input type="password" id="form3Example4cg" className="form-control form-control-lg" autoComplete='off' name="password" value={Credentials.password} onChange={update} />
                                             </div>
 
                                             <div className="d-md-flex justify-content-start align-items-center mb-4 py-2">
                                                 <div className="form-check form-check-inline mb-0 me-4">
                                                     <input className="form-check-input" type="radio" name="usertype" id="Coustomer" 
                                                         value="Coustomer" onClick={handleselect}/>
-                                                    <label className="form-check-label" htmlFor="coustomer">Coustomer
+                                                    <label className="form-check-label" htmlFor="coustomer">Customer
 
                                                     </label>
                                                 </div>

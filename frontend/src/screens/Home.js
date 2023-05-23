@@ -6,9 +6,7 @@ import FarmerCard from '../components/FarmerCard'
 import axios from 'axios'
 import style from "./style.css"
 import Footer from '../components/Footer'
-
 export default function Home() {
-
 
   const [foodcat, setfoodcat] = useState([]);
   const [fooditem, setfooditem] = useState([]);
@@ -16,7 +14,6 @@ export default function Home() {
 
   const loadData = async () => {
     axios.post(`${process.env.REACT_APP_BACKEND}/api/fooddata`, {
-
     }).then((response) => {
       setfooditem(response.data[0]);
       setfoodcat(response.data[1]);
@@ -24,7 +21,6 @@ export default function Home() {
     })
 
   }
-
   useEffect(() => {
     loadData()
   }, [])
@@ -41,13 +37,13 @@ export default function Home() {
                 foodcat.map((data) => {
                   return (<div className='row sub'>
                     <div key={data._id} className="fs-2 m-3">
-                      {data.CategoryName}
+                      {data.name}
                     </div>
                     {
-                      fooditem.filter((item) => item.CategoryName === data.CategoryName).map(filteritems => {
+                      fooditem.filter((item) => item.categoryname === data.name).map(filteritems => {
                         return (
                           <div key = {filteritems._id} className='col-12 col-md-6 add col-lg-3'>
-                            <Cards img={filteritems.img} title={filteritems.ProductName} quantity={filteritems.Quantity} price={filteritems.Price} />
+                            <Cards img={filteritems.img} title={filteritems.name}  price={filteritems.price} />
                           </div>
                         )
                       })
@@ -58,14 +54,13 @@ export default function Home() {
               }
             </div>
             <div className='container'>
-
               <div className='row'>
                 <p className='fs-2 mb-3'>Connect to your Trustable Farmer</p>
                 {
                   farmer.map((farmerdata) => {
                     return (
                       <div key = {farmerdata._id} className='col-12 col-md-6 add col-lg-3'>
-                        <FarmerCard title={farmerdata.Name} img={farmerdata.img} Location={farmerdata.Location} sold={farmerdata.products[0].ProductName} />
+                        <FarmerCard title={farmerdata.name} img={farmerdata.img} Location={farmerdata.location} sold={farmerdata.topproduct1} />
                       </div>
                     )
                   })
@@ -78,5 +73,4 @@ export default function Home() {
       <Footer />
     </div>
   )
-
 }

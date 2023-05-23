@@ -27,8 +27,6 @@ export default function Signup() {
             }
           })
     }
-
-
     return (
         <>
             <section className="vh-100 bg-image"
@@ -45,13 +43,13 @@ export default function Signup() {
 
                                         <form>
                                             <div className="form-outline mb-2">
-                                                <input type="email" autoComplete='off' id="form3Example3cg" className="form-control form-control-lg" onChange={handlechange} name="email" value={info.email}/>
                                                 <label className="form-label" htmlFor="form3Example3cg">Your Email</label>
+                                                <input type="email" autoComplete='off' id="form3Example3cg" className="form-control form-control-lg" onChange={handlechange} name="email" value={info.email}/>
                                             </div>
 
                                             <div className="form-outline mb-2">
-                                                <input type="password" id="form3Example4cg" className="form-control form-control-lg" name="password" value={info.password} onChange={handlechange}/>
                                                 <label className="form-label" htmlFor="form3Example4cg">Password</label>
+                                                <input type="password" id="form3Example4cg" className="form-control form-control-lg" name="password" value={info.password} onChange={handlechange}/>
                                             </div>
                                             <div className="d-flex justify-content-center">
                                                 <button type="button" onClick={handleSubmit}

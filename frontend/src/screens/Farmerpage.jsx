@@ -28,10 +28,12 @@ export default function Farmerpage() {
                 farmer.map((farmerdata) => {
                     return (
                         <Farmerpagecontent graph = {farmerdata.graph} img={farmerdata.img}
-                        IncometoDate= {farmerdata.IncometoDate} lastmonthincome={farmerdata.Lastmonthincome} key={farmerdata.Name} name={farmerdata.Name}  location = {farmerdata.Location} phone={farmerdata.phone}  Email = {farmerdata.Email} farmimage1={farmerdata.farmimage1} farmimage2 = {farmerdata.farmimage2}
-                        profit = {farmerdata.Profit} expenses={farmerdata.Expenses}
-                        averagemonthlyincome = {farmerdata.AveragemonthlyIncome}
-                        product1 = {farmerdata.products[0].img} product2 = {farmerdata.products[1].img}/>
+                        IncometoDate= {farmerdata.incometodate} lastmonthincome={farmerdata.lastmonthincome} key={farmerdata.name} Name={farmerdata.name}  location = {farmerdata.location} phone={farmerdata.phone}  email = {farmerdata.email} farmimage1={farmerdata.farm1img} farmimage2 = {farmerdata.farm2img}
+                        profit = {farmerdata.profit} expenses={farmerdata.expenses}
+                        averagemonthlyincome = {farmerdata.averagemonthlyincome}
+                        topproduct1img = {farmerdata.topproduct1img} topproduct2img = {farmerdata.topproduct2img}
+                        topproduct3img={farmerdata.topproduct3img} topproduct4img={farmerdata.topproduct4img}
+                        />
                 )
             })}
             <Footer/>

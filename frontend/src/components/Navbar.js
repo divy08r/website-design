@@ -2,10 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
-
 export default function Navbar() {
-  const navigate  = useNavigate(); 
-  const handlelogout = ()=>{
+  const navigate = useNavigate();
+  const handlelogout = () => {
     localStorage.removeItem("authtoken");
     navigate("/login");
   }
@@ -38,7 +37,9 @@ export default function Navbar() {
 
                   <Link to="https://divy08r.github.io/greendel/" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Editorial</Link>
 
+                  <Link to="/Cropprediction" className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Crop Prediction</Link>
                   <Link to="/contactus" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact us</Link>
+
                 </div>
               </div>
             </div>
@@ -61,17 +62,18 @@ export default function Navbar() {
                 </div>
                 :
                 <>
-                <div className="relative ml-3">
-                  <div >
-                      <button type="button" className="btn btn-success mx-3 bg-white text-black">My Cart</button>
+                  <div className="relative ml-3">
+                    <div >
+                      <button type="button" className="btn btn-success mx-3 bg-white text-black" onClick={() => navigate('/MyCart')}>My Cart
+                        </button>
+                    </div>
                   </div>
-                </div>
-                <div className="relative ml-3">
-                  <div >
+                  <div className="relative ml-3">
+                    <div >
                       <button onClick={handlelogout} type="button" className="btn btn-success mx-3 bg-white text-black">Logout</button>
+                    </div>
                   </div>
-                </div>
-              </>
+                </>
               }
             </div>
           </div>
@@ -81,11 +83,11 @@ export default function Navbar() {
           <div className="space-y-1 px-2 pt-2 pb-3">
             <Link to="/" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</Link>
 
-            <Link to="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Editorial</Link>           
+            <Link to="https://divy08r.github.io/greendel/" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Editorial</Link>
+            <Link to="." className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Crop Prediction</Link>
             <Link to="/contactus" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact Us</Link>
           </div>
         </div>
-
       </nav>
 
 
